@@ -127,6 +127,11 @@ align-items: flex-start;
 
 /* Image Gallery Grid Styling */
 
+.grid-headline p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .image-gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -137,14 +142,32 @@ align-items: flex-start;
 }
 
 .image-gallery-container .item {
-    /* padding: 25px; */
     font-size: 1.5rem;
     text-align: center;
+    z-index: 8;
+    position: relative;
+}
+
+/* .item-1 {
+    background-image:url(/images/square.jpg);
+    background-size: cover;
+    width: 1fr;
+    height: 1fr;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+} */
+
+.centered-image-text {
+    color: red;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .item-4, .item-8 {
     grid-column: 1 / 4;
-    text-align: center;
 
 }
 
@@ -154,7 +177,77 @@ align-items: flex-start;
     margin-top: 25px;
 }
 
-.footer {
+
+/* GRID IMAGES */
+
+.grid-image-1 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(images/skyscrapers.jpg);
+    background-size: cover;
+    max-width: 500px;
+    height: 300px;
+    position: relative;
+  }
+
+  .grid-image-2 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(/images/tree.png);
+    background-size: cover;
+    max-width: 500px;
+    height: 300px;
+    position: relative;
+  }
+
+  .grid-image-3 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(/images/puppy.jpg);
+    background-size: cover;
+    max-width: 500px;
+    height: 300px;
+    position: relative;
+  }
+
+  .grid-image-4 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(/images/Wide.jpg);
+    background-size: auto;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    /* position: relative; */
+   }
+
+  .item p {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    background:rgba(255, 255, 255, .3);
+    padding: 15px 0 15px 0;
+  }
+
+  .footer {
     position: bottom;
     left: 0;
     bottom: 0px;
